@@ -1,5 +1,6 @@
 (ns spectrum.flow-test
-  (:require [clojure.test :refer :all]
+  (:require [clojure.future :refer :all]
+            [clojure.test :refer :all]
             [clojure.tools.analyzer.jvm :as ana.jvm]
             [clojure.spec.alpha :as s]
             [clojure.spec.test.alpha :as spec-test]
@@ -50,9 +51,10 @@
     (s/+ integer?) [(test-param {:name 'x__#0 :variadic? false}) (test-param {:name 'xs__#0, :variadic? false})] [(c/parse-spec 'integer?) (c/parse-spec 'integer?)]
     (s/+ integer?) [(test-param {:name 'x__#0 :variadic? false}) (test-param {:name 'xs__#0, :variadic? true})] [(c/parse-spec 'integer?) (c/parse-spec (s/cat :x (s/* integer?)))])
 
-  (testing "truthy"
-    (are [params spec macro?] (every? c/conformy? (map ::flow/ret-spec (flow/destructure-fn-params params spec macro?)))
-      [(test-param {:name '&form__#0}) (test-param {:name '&env__#0}) (test-param {:name 'decl__#0 :variadic? true})] (:args (c/parse-spec (s/spec 'clojure.core/let))) true)))
+  ;; (testing "truthy"
+  ;;   (are [params spec macro?] (every? c/conformy? (map ::flow/ret-spec (flow/destructure-fn-params params spec macro?)))
+  ;;     [(test-param {:name '&form__#0}) (test-param {:name '&env__#0}) (test-param {:name 'decl__#0 :variadic? true})] (:args (c/parse-spec (s/spec 'clojure.core/let))) true))
+  )
 
 (deftest conforming-java-method
   (testing "truthy"

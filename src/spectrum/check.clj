@@ -1,5 +1,6 @@
 (ns spectrum.check
-  (:require [clojure.pprint :as pprint :refer (pprint)]
+  (:require [clojure.future :refer :all]
+            [clojure.pprint :as pprint :refer (pprint)]
             [clojure.reflect :as reflect]
             [clojure.string :as str]
             [clojure.spec.alpha :as s]

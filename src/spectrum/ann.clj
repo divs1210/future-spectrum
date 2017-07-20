@@ -1,5 +1,6 @@
 (ns spectrum.ann
-  (:require [clojure.spec.alpha :as s]
+  (:require [clojure.future :refer :all]
+            [clojure.spec.alpha :as s]
             [spectrum.conform :as c]
             [spectrum.data :as data]
             [spectrum.flow :as flow]

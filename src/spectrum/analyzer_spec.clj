@@ -1,5 +1,6 @@
 (ns spectrum.analyzer-spec
-  (:require [clojure.spec.alpha :as s]
+  (:require [clojure.future :refer :all]
+            [clojure.spec.alpha :as s]
             [clojure.tools.analyzer.jvm :as ana.jvm]))
 
 (s/def ::ana.jvm/op keyword?)

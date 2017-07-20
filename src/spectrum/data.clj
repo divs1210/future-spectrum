@@ -1,5 +1,6 @@
 (ns spectrum.data
-  (:require [clojure.tools.analyzer.jvm :as ana.jvm]
+  (:require [clojure.future :refer :all]
+            [clojure.tools.analyzer.jvm :as ana.jvm]
             [clojure.spec.alpha :as s]
             [spectrum.util :refer (print-once protocol?)]))
 

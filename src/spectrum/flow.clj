@@ -1,5 +1,6 @@
 (ns spectrum.flow
-  (:require [clojure.core.memoize :as memo]
+  (:require [clojure.future :refer :all]
+            [clojure.core.memoize :as memo]
             [clojure.core.match :refer [match]]
             [clojure.tools.analyzer.jvm :as ana.jvm]
             [clojure.reflect :as reflect]

@@ -1,5 +1,6 @@
 (ns spectrum.examples.bad.loop-change-type
-  (:require [clojure.spec.alpha :as s]))
+  (:require [clojure.future :refer :all]
+            [clojure.spec.alpha :as s]))
 
 (s/fdef foo :args (s/cat :i int?) :ret int?)
 (defn foo [x]

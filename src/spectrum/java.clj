@@ -1,5 +1,6 @@
 (ns spectrum.java
-  (:require [clojure.spec.alpha :as s]
+  (:require [clojure.future :refer :all]
+            [clojure.spec.alpha :as s]
             [clojure.set :as set]
             [clojure.string :as str]
             [spectrum.data :as data]

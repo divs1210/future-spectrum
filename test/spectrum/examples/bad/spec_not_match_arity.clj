@@ -1,5 +1,6 @@
 (ns spectrum.examples.bad.spec-not-match-arity
-  (:require [clojure.spec.alpha :as s]))
+  (:require [clojure.future :refer :all]
+            [clojure.spec.alpha :as s]))
 
 
 ;; fn takes two args, spec takes one.

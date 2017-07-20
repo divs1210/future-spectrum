@@ -1,5 +1,6 @@
 (ns spectrum.core-specs
-  (:require [clojure.core :as core]
+  (:require [clojure.future :refer :all]
+            [clojure.core :as core]
             [clojure.spec.alpha :as s]
             [spectrum.ann :as ann]
             [spectrum.util :refer (protocol? predicate-spec)])

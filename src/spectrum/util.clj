@@ -1,5 +1,6 @@
 (ns spectrum.util
-  (:require [clojure.tools.analyzer.jvm :as ana.jvm]
+  (:require [clojure.future :refer :all]
+            [clojure.tools.analyzer.jvm :as ana.jvm]
             [clojure.spec.alpha :as s])
   (:import clojure.lang.Var))
 

@@ -1,5 +1,6 @@
 (ns spectrum.examples.bad.invoke-let
-  (:require [clojure.spec.alpha :as s]))
+  (:require [clojure.future :refer :all]
+            [clojure.spec.alpha :as s]))
 
 (s/fdef bar :args (s/cat :s string?) :ret string?)
 (defn bar [s]

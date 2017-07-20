@@ -1,5 +1,6 @@
 (ns spectrum.conform
-  (:require [clojure.core.memoize :as memo]
+  (:require [clojure.future :refer :all]
+            [clojure.core.memoize :as memo]
             [clojure.reflect :as reflect]
             [clojure.spec.alpha :as s]
             [clojure.spec.gen.alpha :as gen]

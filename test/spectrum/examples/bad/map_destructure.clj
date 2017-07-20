@@ -1,5 +1,6 @@
 (ns spectrum.examples.bad.map-destructure
-  (:require [clojure.spec.alpha :as s]))
+  (:require [clojure.future :refer :all]
+            [clojure.spec.alpha :as s]))
 
 (s/def ::message string?)
 (s/fdef foo :args (s/cat :args (s/keys :req-un [::message])) :ret int?)

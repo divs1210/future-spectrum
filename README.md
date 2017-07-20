@@ -1,9 +1,11 @@
-[![CircleCI](https://circleci.com/gh/arohner/spectrum.svg?style=svg)](https://circleci.com/gh/arohner/spectrum)
-[![Clojars Project](https://img.shields.io/clojars/v/spectrum.svg)](https://clojars.org/spectrum)
-
-# spectrum
-
+# future-spectrum
 A library for doing static analysis of Clojure code, catching clojure.spec conform errors at compile time.
+
+It's a backport of [spectrum](https://github.com/arohner/spectrum) for Clojure 1.8 using [clojure-future-spec](https://github.com/tonsky/clojure-future-spec).
+
+**Leiningen**
+
+`[future-spectrum "0.1.0-SNAPSHOT"]`
 
 **Wait what?**
 
@@ -102,7 +104,7 @@ Spectrum is still very early, and not ready for production use. Current developm
 
 ## License
 
-Copyright © 2016 Allen Rohner
+Copyright © 2016 Allen Rohner, Divyansh Prakash
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.

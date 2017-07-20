@@ -1,5 +1,6 @@
 (ns spectrum.examples.good.get
-  (:require [clojure.spec.alpha :as s]))
+  (:require [clojure.future :refer :all]
+            [clojure.spec.alpha :as s]))
 
 ;; testing the ann for clojure.core/get
 
